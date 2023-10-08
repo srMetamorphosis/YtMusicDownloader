@@ -2,7 +2,7 @@ from pytube import YouTube
 from moviepy.editor import *
 
 
-url = 'https://www.youtube.com/watch?v=-T2TIJF9Xyk'
+url = {'link placeholder'}
 
 yt = YouTube(url)
 
@@ -13,7 +13,7 @@ audio_streaam = yt.streams.filter(only_audio=True, file_extension='webm').first(
 print("Title: ", yt.title)
 
 #Download audio stream
-download_path = audio_streaam.download(output_path='/Users/mac/Desktop/Musica')
+download_path = audio_streaam.download(output_path='Path Placeholder')
 
 # Convert downloaded audio to mp3
 
